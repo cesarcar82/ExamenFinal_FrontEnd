@@ -1,0 +1,39 @@
+/* Reseteo todas las medidas para tener mayor control */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #242e52;
+  padding: 0 10px;
+  transition: 0.45;
+}
+
+header {
+  color: #242e52;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+header nav {
+  display: inline-block;
+
+  margin: 28px;
+}
+.mostrar-menu,
+.esconder-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.45;
+}
+.esconder-menu {
+  order: 1;
+}
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: red;
+}
