@@ -4,13 +4,6 @@ body {
   padding: 0;
 }
 
-.menu a {
-  text-decoration: none;
-  color: #242e52;
-  padding: 0 10px;
-  transition: 0.45;
-}
-
 header {
   color: #242e52;
   display: flex;
@@ -35,5 +28,44 @@ header nav {
 .menu a:hover,
 .mostrar-menu:hover,
 .esconder-menu:hover {
-  color: red;
+  color: rgb(143, 148, 167);
+}
+/* Responsive */
+
+@media (max-width: 375px) {
+  /* Header */
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: grey;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    /*right: -100%;*/
+    z-index: 100;
+    transition: 0.8;
+  }
+}
+.menu a {
+  text-decoration: none;
+  color: #242e52;
+  padding: 0 10px;
+  transition: 0.45;
+  display: block;
+  padding: 20px;
+}
+
+.esconder-menu {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+#check:checked ~ .menu {
+  right: 0px;
 }
