@@ -98,8 +98,17 @@ header {
     display: none;
   }
 }
-
-.logos {
-  width: 20px;
-  height: 20px;
+h2 {
+  color: #232c50;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 66px;
+}
+.parrafos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.contenedores {
+  width: 30%;
 }
