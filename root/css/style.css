@@ -108,7 +108,20 @@ h2 {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  margin-right: 80px;
 }
 .contenedores {
   width: 30%;
+}
+
+footer section {
+  width: 25%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #242e52;
+  padding: 0 10px;
+  transition: 0.45;
+  list-style: none;
 }
