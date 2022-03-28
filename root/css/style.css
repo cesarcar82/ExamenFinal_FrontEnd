@@ -4,19 +4,29 @@
   src: url(./diseño/Be_Vietnam_Pro);
 }
 /* Reseteo todas las medidas para tener mayor control */
-body {
+html, body {
   margin: 0;
   padding: 0;
   font-family: Be_Vietnam_Pro;
+  max-width: 1440;
+  font-size: 1rem;
+  background: #E5E5E5;
+  box-sizing: border-box;
+  
 }
 
 header {
   height: 100px;
   color: #242e52;
+  background-color: white;
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  max-width: 1440;
+  
 }
 
 .menu a {
@@ -51,12 +61,102 @@ header {
   background: #f3603b;
   border-radius: 50px;
   padding: 10px 30px;
+  /* position: fixed; */
 }
 .botton:hover {
   background-color: #f18a70;
 }
-/* Responsive */
 
+main{
+  max-width: 1440;
+}
+
+h2 {
+  color: #232c50;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 66px;
+}
+
+.parrafos {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 80px;
+  background-color: white;
+}
+.contenedores {
+  max-width: 1440;
+  width: 30vw;
+}
+.tarjetas {
+  /* flex-direction: column; */
+  /* justify-content: center; */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+.tarjetas .contenedores h4 {
+  justify-content: center;
+}
+.card{
+  Width: 445px;
+  Height: 219px;
+  align-content: center;
+}
+#preFooter {
+  margin-top: 150px;
+  height: 224px;
+  left: 0px;
+  
+  background: #f3613c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 165px;
+  padding-right: 165px;
+}
+#preFooter .botton {
+  background-color: white;
+  color: #f3613c;
+}
+
+footer {
+  height: 247px;
+  left: 0px;
+  padding-left: 165px;
+  padding: 52px 165px;
+
+  background: #1e1e26;
+}
+footer section {
+  width: 25%;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #242e52;
+  padding: 0 10px;
+  transition: 0.45;
+}
+
+footer .contenedores {
+  justify-content: space-between;
+}
+
+.parrafos h3 {
+  height: 50px;
+}
+
+.contenedores li {
+  list-style: none;
+  
+
+}
+
+
+
+/* Responsive */
 @media (max-width: 375px) {
   /* Header */
   .mostrar-menu,
@@ -97,31 +197,10 @@ header {
   header section a {
     display: none;
   }
-}
-h2 {
-  color: #232c50;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 66px;
-}
-.parrafos {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  margin-right: 80px;
-}
-.contenedores {
-  width: 30%;
-}
-
-footer section {
-  width: 25%;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: #242e52;
-  padding: 0 10px;
-  transition: 0.45;
-  list-style: none;
-}
+  .parrafos {
+    flex-direction: column-reverse;
+  }
+  .contenedores{
+    width: 100%;
+    justify-content: center;
+  }
