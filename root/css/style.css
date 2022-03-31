@@ -135,7 +135,7 @@ p {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  margin-right: 80px;
+
   background-color: white;
 }
 .contenedores {
@@ -179,7 +179,7 @@ p {
   margin-top: 40%;
 }
 
-#preFooter {
+.preFooter {
   margin-top: 5rem;
   height: 224px;
   width: 100%;
@@ -191,7 +191,7 @@ p {
   padding-left: 5rem;
   padding-right: 5rem;
 }
-#preFooter .botton {
+.preFooter .botton {
   background-color: white;
   color: #f3613c;
 }
@@ -303,7 +303,52 @@ form {
     flex-direction: column-reverse;
   }
   .contenedores {
-    width: 100%;
+    width: 95vw;
     justify-content: center;
+  }
+  main img {
+    max-width: 17.56rem;
+    max-height: 15.74rem;
+  }
+  main .parrafos {
+    padding: 1rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .parrafos h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 100.6%;
+  }
+  #c1,
+  #c2 {
+    display: none;
+  }
+
+  .preFooter {
+    flex-direction: column;
+    height: 18rem;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+  #lis {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  #l1 {
+    padding-right: 5rem;
+  }
+  footer {
+    padding: 10.2rem 3rem;
+  }
+  footer img {
+    padding-top: 2rem;
   }
 }
